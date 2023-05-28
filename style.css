@@ -81,6 +81,14 @@ li:nth-child(odd) {
   border-top: 2px solid #ccc;
 }
 
+.correct::after {
+  content:"Correct!";
+}
+
+.incorrect::after {
+  content:"Wrong!";
+}
+
 .timer {
   position: absolute;
   top: 10px;

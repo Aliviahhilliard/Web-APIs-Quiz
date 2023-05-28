@@ -3,7 +3,7 @@ function printHighscores() {
   var highscores = JSON.parse(window.localStorage.getItem('highscores')) || [];
 
   // sort highscores by score property in descending order HINT: the sort method. 
-  highscores.sort(function(a,b) {
+  highscores.sort(function(a, b) {
     return b.score - a.score;
   });
 
@@ -13,7 +13,7 @@ function printHighscores() {
     liTag.textContent = highscores[i].initials + ' - ' + highscores[i].score;
 
     // display on page
-    var olEl = document.getElementById('highschore-list');
+    var olEl = document.getElementById('highscores');
     olEl.appendChild(liTag);
   }
 }
